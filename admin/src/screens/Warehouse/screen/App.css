@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Row {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+:root {
+  --color-yollow: #f9c74f;
+  --color-purple: #9d4edd;
+}
+
+.App {
+  text-align: center;
+  padding: 4em 0;
+}
+
+.bg-yellow {
+  background-color: var(--color-yollow);
+}
+
+.bg-purple {
+  background-color: var(--color-purple);
+}
+
+.item1 {
+  grid-area: header;
+}
+
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+.item5 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "main main main main right right"
+    "footer footer footer footer footer footer";
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-input {
+  @apply mt-1 block w-full py-2 px-3 border border-gray-200 bg-black rounded-md focus:outline-none focus:ring-indigo-500 sm:text-sm;
+}
+.my-custom-scrollbar {
+  position: relative;
+  height: 200px;
+  overflow: auto;
+}
+.table-wrapper-scroll-y {
+  display: block;
+}
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table-dark {
+  background-color: #28b463;
+  border-radius: 10px;
+}
+
+.table-dark tr:hover {
+  background-color: #ddd;
+}
+.button1 {
+  background-color: #4caf50; /* Green */
+  border-radius: 100px;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2 {
+  background-color: #4caf50; /* Green */
+  border-radius: 100px;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button3 {
+  background-color: #4caf50; /* Green */
+  border-radius: 100px;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.form-input {
+  font-size: 20px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 6px solid green;
+}
+.px-3 {
+}
